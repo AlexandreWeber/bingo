@@ -1,0 +1,94 @@
+* {
+    font-family: arial, sans-serif;
+    color: #ffff;
+}
+
+body {
+  background-color: #373435;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 20px;
+  margin-right: 5px;
+}
+
+.numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.numbers {
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.current-number {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.number {
+  width: 350px;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+
+.res-circle {
+  width: 7%;
+  border-radius: 50%;
+  line-height: 0;
+  position: relative;
+  margin: 20px;
+}
+
+.res-circle-current {
+  width: 15%;
+  border-radius: 50%;
+  line-height: 0;
+  position: relative;
+  margin: 20px;
+}
+
+.res-circle::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.res-circle-current::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.circle-txt {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 70px;
+  font-family: arial, sans-serif;
+}
+
+.circle-current-txt {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 150px;
+  font-family: arial, sans-serif;
+}
